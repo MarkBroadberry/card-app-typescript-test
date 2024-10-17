@@ -10,3 +10,11 @@ export type EntryContextType = {
   updateEntry: (id: string, entryData: Entry) => void;
   deleteEntry: (id: string) => void;
 };
+
+export type Theme = "light" | "dark";
+
+export interface NavBarProps {
+  theme: Theme;
+  setTheme: (theme: Theme) => void;
+}
+
