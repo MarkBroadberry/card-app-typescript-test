@@ -10,7 +10,6 @@ export default function SettingsDialog({ theme, setTheme }: NavBarProps) {
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
-    console.log("set theme to: ", newTheme);
   };
 
   return (
@@ -42,9 +41,15 @@ export default function SettingsDialog({ theme, setTheme }: NavBarProps) {
                 />
               </Switch>
             </div>
-            <div className = "flex justify-center">
-                <button className="mt-16 p-1 text-sm bg-gray-400 dark:bg-gray-500 hover:bg-gray-500 dark:hover:bg-gray-400 rounded-md font-medium text-black dark:text-white"
-                onClick={(()=>{setOpen(false)})}>Close</button>
+            <div className="flex justify-center">
+              <button
+                className="mt-16 p-1 text-sm bg-gray-400 dark:bg-gray-500 hover:bg-gray-500 dark:hover:bg-gray-400 rounded-md font-medium text-black dark:text-white"
+                onClick={() => {
+                  setOpen(false);
+                }}
+              >
+                Close
+              </button>
             </div>
           </DialogPanel>
         </div>

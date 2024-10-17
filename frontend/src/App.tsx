@@ -13,10 +13,8 @@ export default function App() {
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
-      console.log(document.documentElement.classList);
     } else {
       document.documentElement.classList.remove("dark");
-      console.log(document.documentElement.classList);
     }
   }, [theme]);
 
