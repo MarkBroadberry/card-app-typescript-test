@@ -17,4 +17,3 @@ export interface NavBarProps {
   theme: Theme;
   setTheme: (theme: Theme) => void;
 }
-
