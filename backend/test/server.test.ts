@@ -56,7 +56,7 @@ describe("test fastify endpoints", () => {
     expect(response.json().description).toEqual(testEntry.description);
   });
 
-  it("/get/id should throw a 500 error if the id is doesn't exist", async () => {
+  it("/get/id should throw a 500 error if the id doesn't exist", async () => {
     const response = await server.inject({
       method: "get",
       url: "/get/999999",
