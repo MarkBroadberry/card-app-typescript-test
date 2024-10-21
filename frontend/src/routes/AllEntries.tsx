@@ -28,14 +28,14 @@ export default function AllEntries() {
             key={index}
             className="bg-gray-300 dark:bg-gray-600 dark:shadow-gray-900 shadow-md shadow-gray-500 m-3 p-4 rounded flex flex-col justify-between"
           >
-            <div className = "flex justify-between">
-                <h1 className="font-bold text-sm md:text-lg dark:text-white pt-4">{entry.title}</h1>
-                <div className = "grid">
-                    <p className="md:text-xs text-gray-600 dark:text-gray-300">Scheduled</p>
-                    <time className="text-right text-sm md:text-lg dark:text-white">
-                        {new Date(entry.scheduled.toString()).toLocaleDateString()}
-                    </time> 
-                </div>
+            <div className="flex justify-between">
+              <h1 className="font-bold text-sm md:text-lg dark:text-white pt-4">{entry.title}</h1>
+              <div className="grid">
+                <p className="md:text-xs text-gray-600 dark:text-gray-300">Scheduled</p>
+                <time className="text-right text-sm md:text-lg dark:text-white">
+                  {new Date(entry.scheduled.toString()).toLocaleDateString()}
+                </time>
+              </div>
             </div>
             <p className="text-center text-lg font-light md:mt-2 md:mb-4 mt-1 mb-3 dark:text-gray-100">
               {entry.description}
@@ -59,10 +59,10 @@ export default function AllEntries() {
                   🖊
                 </button>
               </div>
-              <div className = "grid">
+              <div className="grid">
                 <p className="md:text-xs text-gray-600 dark:text-gray-300">Created</p>
                 <time className="text-right text- md:text-lg dark:text-white">
-                    {new Date(entry.created_at.toString()).toLocaleDateString()}
+                  {new Date(entry.created_at.toString()).toLocaleDateString()}
                 </time>
               </div>
             </section>
